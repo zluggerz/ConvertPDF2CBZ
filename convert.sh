@@ -11,5 +11,5 @@ pdftoppm -q -png -r 200 "$PTH/$1" "$PTH/$OUTFILE"
 zip "$PTH/$OUTZIP" *.png
 
 if test -f "$PTH/$OUTZIP"; then
-    mv "$PTH/$OUTZIP" "$PTH/$OUTFILE.cbz" && rm "$PTH/*.png"
+    mv "$PTH/$OUTZIP" "$PTH/$OUTFILE.cbz" && rm *.png
 fi
